@@ -62,7 +62,7 @@ func init() {
 }
 
 func initAccount() {
-	b, err := ioutil.ReadFile(path + "conf/init/user.json")
+	b, err := ioutil.ReadFile(path + "/conf/init/user.json")
 	if err != nil {
 		panic(err)
 	}
@@ -77,7 +77,7 @@ func initAccount() {
 	if code != RS.RS_success {
 		panic("init failed。")
 	}
-	Blogger = UMgr.Get("deepzz")
+	Blogger = UMgr.Get("qiaomu")
 }
 
 func timer() {
